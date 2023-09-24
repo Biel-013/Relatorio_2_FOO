@@ -1,0 +1,135 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{enumerate}
+
+\graphicspath{{Imagens/}}
+\begin{document}
+
+%///////////////////////////BEGIN CAPA////////////////////////////
+\begin{titlepage}
+    \begin{center}
+
+        {\normalsize \bfseries UNIVERSIDADE FEDERAL DE MINAS GERAIS}\\[2cm]
+        {\normalsize Labolatório de Análise Circuitos I (ELE028)}\\[2cm]
+        {\normalsize Gabriel Luiz de Almeida e Felipe Meireles Leonel}\\[8cm]
+        {\large \bfseries Movimentos Harmônicos Simples}\\[10cm]
+        {\normalsize Belo Horizonte, Minas Gerais\\2023}\\[4cm]
+
+    \end{center}
+\end{titlepage}
+%///////////////////////////END CAPA//////////////////////////////
+
+%///////////////////////////BEGIN OBJETIVOS////////////////////////////
+\section{Objetivos}
+
+\paragraph{} Calcular o comprimento de onda da luz emitida por um laser e estabelecer a
+relação entre o índice de refração do ar e a pressão atmosférica.
+%////////////////////////////END OBJETIVOS/////////////////////////////
+
+%///////////////////////////BEGIN MATERIAIS////////////////////////////
+\section{Materiais}
+\begin{itemize}
+    \item laser de Ne-He
+    \item interferômetro de Michelson
+    \item câmara transparente e bomba de vácuo
+\end{itemize}
+%////////////////////////////END MATERIAIS/////////////////////////////
+
+%///////////////////////////BEGIN PROCEDIMENTO////////////////////////////
+\section{Procedimento}
+
+\subsection{Parte 1}
+\begin{enumerate}[(a)]
+    \item Primeiramente o laser foi ligado, e os equipamentos calibradoos de tal forma
+          que se observa-se anéis iluminados na tela do interferômetro.
+    \item Com o materias prontos e montados, girou-se o micrômetro do interferômetro a
+          fim de se contar 100 máximos de luz no centro dos anéis da tela.
+    \item Observando o deslocamento necessário do espelho a partir do micrômetro
+          necessário de para a passagem de 100 máximos na tela, determinou-se o
+          comprimento de onda do laser utilizado.
+\end{enumerate}
+
+\subsection{Parte 2}
+\begin{enumerate}[(a)]
+    \item Para a segunda parte do experimetro, aproveitou-se a montagem dos equipamentos
+          acrescentando-se uma câmara posicionada logo a frente do laser.
+    \item Retirou-se então o ar da câmara, até que se tivesse uma pressão negatica de 800
+          mili Bar, em relação a pressão ambiente.
+    \item Observando o máximos de luz no centro dos anéis na tela, liberou-se a entrada
+          de pressão para dentro a câmara. Contou-se a quantidade de máximos de luz que
+          passavam de 100 em 100 mili bar, anotando-os a fim de se obter um gráfico
+          posteriormente.
+    \item Usando um software de plotagem de gráfico, realizou-se uma regressão linear com
+          os dados obtidos. Com os resultados da regressão, foram realizados calculos
+          para a determinação do indice de refração do ar.
+\end{enumerate}
+%////////////////////////////END PROCEDIMENTO/////////////////////////////
+
+%///////////////////////////BEGIN RESULTADOS////////////////////////////
+\section{Resultados}
+\paragraph{} Do experiento foi obtido o seguinte gráfico da força sentida pelo sensor ao
+longo do tempo.
+
+\begin{figure}[!htb]
+    \begin{center}
+        \includegraphics[scale=.60]{dados}\label{grafico 1}
+        \caption{ Gráfico das forças medidas do movimento hamonico simples ao longo do tempo}
+    \end{center}
+\end{figure}
+\newpage
+\pagebreak
+
+\paragraph{} A partir do ajuste de seno realizado no gráfico 1, obteve-se o gráfico 2, que
+contem a função que melhor descreve o movimento do sistema massa mola.
+
+\begin{figure}[!htb]
+    \begin{center}
+        \includegraphics[scale=.60]{Ajuste}\label{grafico 2}
+        \caption{ Gráfico do ajuste de seno realizado}
+    \end{center}
+\end{figure}
+% \newpage
+% \pagebreak
+
+\paragraph{} Das informações obtidas pelo ajuste de seno do gráfico do ajuste, foram
+realizados os seguintes calculos para a obtenção do valor da constante elástica
+da mola.
+
+\newpage
+\pagebreak
+\includepdfmerge[pages=-]{pdf/calculos}
+%////////////////////////////END RESULTADOS/////////////////////////////
+
+%//////////////////////BEGIN ANÁLISE E DISCURSÕES///////////////////////
+\section{Análise e discursões}
+
+\paragraph{} Com base nos resultados obtidos, podemos concluir que a mola em questão é
+composta principalmente de ferro, o que era uma expectativa razoável, dadas as
+características do experimento.
+
+\paragraph{} Além disso, vale destacar que o método utilizado para determinar a constante
+elástica da mola tem aplicações mais amplas, incluindo a capacidade de estimar
+a massa de um objeto em um contexto de movimento harmônico simples. Essa
+técnica poderia, por exemplo, ser empregada para calcular a massa de um veículo
+através das oscilações de sua suspensão. Essa abordagem é particularmente
+valiosa em competições de automobilismo, onde a análise dinâmica de um veículo
+em diversos aspectos é crucial para o seu desempenho e otimização.
+%//////////////////////END ANÁLISE E DISCURSÕES/////////////////////////
+
+%///////////////////////////BEGIN CONCLUSÃO////////////////////////////
+\section{Conclusão}
+\paragraph{} Conclui-se então que o experimento foi realizado com sucesso, uma vez que a
+constante elástica obtida se aproximou bastante com o valor esperado.
+%///////////////////////////END CONCLUSÃO////////////////////////////
+
+%///////////////////////////BEGIN ANEXOS////////////////////////////
+% \section{Conclusão}
+% \paragraph{} Conclui-se então que o experimento foi realizado com sucesso, uma vez que a
+% constante elástica obtida se aproximou bastante com o valor esperado.
+%///////////////////////////END ANEXOS////////////////////////////
+\end{document}

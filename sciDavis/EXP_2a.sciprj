@@ -1,0 +1,78 @@
+SciDAVis 2.2.7 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+2225
+<table creation_time="2023-18-09 15:12:32:000" caption_spec="%n%C{ - }%c" name="Table1" columns="2" rows="30"><comment><![CDATA[]]></comment><column creation_time="2023-18-09 15:12:32:286" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2023-18-09 15:12:32:287" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2023-18-09 15:12:32:287" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">4.0000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">6.0000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">8.0000000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e+02</row></column><column creation_time="2023-18-09 15:12:32:289" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2023-18-09 15:12:32:289" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2023-18-09 15:12:32:289" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.2000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">2.8000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">4.1000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">5.3500000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">6.6500000000000000e+01</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width></table>
+geometry	0	0	580	408	active
+
+</table>
+<multiLayer>
+Graph1	1	1	segunda-feira, 18 de setembro de 2023 15:21:29 Hora oficial do Brasil
+geometry	580	0	500	400	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	426	258
+Alignement	0	0
+<graph>
+ggeometry	5	5	474	326
+PlotTitle	Title	#ff000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffffff	255
+Margin	0
+Border	0	#ff000000
+grid	0	0	0	0	#ff0000ff	0	0	#ffa0a0a4	2	0	#ff0000ff	0	0	#ffa0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	X Axis Title	Y Axis Title			
+AxesTitleColors	#ff000000	#ff000000	#ff000000	#ff000000	
+AxesTitleAlignment	5124	4	5124	4
+TitleFont	MS Shell Dlg 2	10	75	0	0	0
+ScaleFont0	MS Shell Dlg 2	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	8	75	0	0	0
+ScaleFont2	MS Shell Dlg 2	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	8	75	0	0	0
+AxisFont0	MS Shell Dlg 2	8	50	0	0	0
+AxisFont1	MS Shell Dlg 2	8	50	0	0	0
+AxisFont2	MS Shell Dlg 2	8	50	0	0	0
+AxisFont3	MS Shell Dlg 2	8	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesNumberColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffffff	255
+curve	Table1_1	Table1_2	1	0	#ff000000	0	1	7	1	#ff000000	#ff000000	0	#ff000000	0	1	0	64		2	0	0	29	1
+FunctionCurve	0,LinearFit1,x,20,100	2			0	1	#ffff0000	0	1	0	0	#ff000000	#ffa0a0a4	0	#ff000000	0	1	16	64		2	0	1662979264	567	1
+<formula>
+B=-0.149999999999999
+A=0.6725
+
+A*x+B
+</formula>
+scale	0	10	70	0	8	5	0	0
+scale	1	10	70	0	8	5	0	0
+scale	2	0	120	0	8	5	0	0
+scale	3	0	120	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	2.70880361173815	68.1707317073171	MS Shell Dlg 2	8	50	0	0	0	#ff000000	1	0	#00ffffff	0	\c{1}Table1_2	\c{2}LinearFit1	</legend>
+</graph>
+</multiLayer>
+<log>
+[segunda-feira, 18 de setembro de 2023 15:48:15 Hora oficial do Brasil	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_2, using function: A*x+B
+Y standard errors: Unknown
+From x = 20 to x = 100
+B (y-intercept) = -0,149999999999999 +/- 1,25199840255489
+A (slope) = 0,6725 +/- 0,0188745860881769
+--------------------------------------------------------------------------------------
+Chi^2 = 4,275
+R^2 = 0,999567898114924
+---------------------------------------------------------------------------------------
+</log>
